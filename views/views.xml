@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_gestion_commandes_tree" model="ir.ui.view">
+        <field name="name">gestion.commandes.tree</field>
+        <field name="model">gestion.commandes</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date_commande"/>
+                <field name="client_id"/>
+                <field name="total"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_gestion_commandes_form" model="ir.ui.view">
+        <field name="name">gestion.commandes.form</field>
+        <field name="model">gestion.commandes</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date_commande"/>
+                        <field name="client_id"/>
+                        <field name="total"/>
+                        <field name="status"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_gestion_commandes" model="ir.actions.act_window">
+        <field name="name">Commandes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">gestion.commandes</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Items -->
+    <menuitem id="gestion_commandes_menu" 
+              name="Gestion des Commandes" 
+              sequence="10"/>
+              
+    <menuitem id="gestion_commandes_menu_items" 
+              name="Commandes" 
+              parent="gestion_commandes_menu" 
+              action="action_gestion_commandes"/>
+</odoo>
