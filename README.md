@@ -38,3 +38,9 @@ Après l'installation, vous trouverez un nouveau menu "Gestion des Commandes" da
    - Client
    - Montant total
 4. Sauvegardez la commande
+
+## Démonstration Vidéo
+
+Une vidéo démontrant l'utilisation du module est disponible ci-dessous :
+
+[![Video Demonstration](https://img.youtube.com/vi/1UQkZjotrhUrkO_9cUYMIyM9YtuKbsd0W/0.jpg)](https://drive.google.com/file/d/10dlKIIp2Gyqn8TdrUCcLXaOoxvI8XCJ2/view?usp=sharing) 
